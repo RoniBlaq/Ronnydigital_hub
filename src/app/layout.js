@@ -20,13 +20,13 @@ export const metadata = {
 
   viewport: "width=device-width, initial-scale=1",
 
-  metadataBase: new URL("https://ronkedigital.vercel.app"),
+  metadataBase: new URL("https://ronnydigitalhub.vercel.app"),
 
   openGraph: {
     title: "Ronnydigitalhub Portfolio",
     description: "Explore my projects and skills in frontend development",
-    url: "https://ronkedigital.vercel.app",
-    siteName: "Ronnydigital hub",
+    url: "https://ronnydigitalhub.vercel.app",
+    siteName: "Ronnydigitalhub",
     images:[
       {
         url:"/preview.jpeg",
