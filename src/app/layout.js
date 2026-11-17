@@ -1,74 +1,94 @@
 import Script from "next/script";
 import Navbar from "@/components/Navbar";
-import "./globals.css";
 import Footer from "@/components/Footer";
+import "./globals.css";
+
+const siteUrl = "https://ronnydigitalhub.vercel.app";
 
 export const metadata = {
-  title:"Ronnydigitalhub",
-  description:"Ronnydigital is a frontend developer passionate about building modern, user-friendly web applications with clean design and smooth user experience.",
+  metadataBase: new URL(siteUrl),
 
-  keywords: [
-    "Frontend Developer",
-    "Next.js",
-    "Tailwindcss",
-    "Web Developer Portfolio",
-  ],
+  title: "Ronnydigital Hub | Website & Web App Development",
 
-  authors: [{ name: "Ronnydigitalhub"}],
+  description:
+    "Ronnydigital Hub helps businesses and organisations build modern websites, web applications and digital brand identities. Explore our services and projects.",
 
-  creator: "Ronnydigitalhub",
+  authors: [{ name: "Ronnydigital Hub" }],
 
-  viewport: "width=device-width, initial-scale=1",
+  creator: "Ronnydigital Hub",
 
-  metadataBase: new URL("https://ronnydigitalhub.vercel.app"),
+  alternates: {
+    canonical: "/",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+    },
+  },
 
   openGraph: {
-    title: "Ronnydigitalhub Portfolio",
-    description: "Explore my projects and skills in frontend development",
-    url: "https://ronnydigitalhub.vercel.app",
-    siteName: "Ronnydigitalhub",
-    images:[
+    title: "Ronnydigital Hub | Websites, Web Apps & Branding",
+    description:
+      "We build modern websites, web applications and digital brand identities for businesses and organisations.",
+    url: siteUrl,
+    siteName: "Ronnydigital Hub",
+    images: [
       {
-        url:"/preview.jpeg",
-        width:1200,
+        url: "/preview.jpeg",
+        width: 1200,
         height: 630,
-        alt:"Ronnydigitalhub portfolio",
+        alt: "Ronnydigital Hub - Website Development, Web Apps and Branding",
       },
     ],
-    locale: "en_US",
+    locale: "en_NG",
     type: "website",
   },
 
   twitter: {
-    card: " summary_large _image",
-    tittle: "Ronnydigitalhub portfolio",
-    description: "Frontend Developer building modern and responsive web apps.",
-    images: [
-      "/preview.jpeg"
-    ],
+    card: "summary_large_image",
+    title: "Ronnydigital Hub | Websites, Web Apps & Branding",
+    description:
+      "Modern websites, web applications and digital branding for businesses and organisations.",
+    images: ["/preview.jpeg"],
   },
+};
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-       {/* <!-- Google tag (gtag.js) --> */}
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-09GGFL3E3H"></script>
-<script id="google-analytics" strategy="afterInteractive">
-  {`
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-09GGFL3E3H"
+          strategy="afterInteractive"
+        />
 
-  gtag('config', 'G-09GGFL3E3H');
-  `}
-</script>
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            window.gtag = gtag;
 
-       <Navbar/>
+            gtag('js', new Date());
+            gtag('config', 'G-09GGFL3E3H');
+          `}
+        </Script>
+
+        <Navbar />
+
         {children}
-        <Footer/>
+
+        <Footer />
       </body>
     </html>
   );
