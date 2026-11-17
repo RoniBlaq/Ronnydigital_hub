@@ -4,8 +4,8 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title:"Ronkedigital",
-  description:"Ronkedigital is a frontend developer passionate about building modern, user-friendly web applications with clean design and smooth user experience.",
+  title:"Ronnydigitalhub",
+  description:"Ronnydigital is a frontend developer passionate about building modern, user-friendly web applications with clean design and smooth user experience.",
 
   keywords: [
     "Frontend Developer",
@@ -14,25 +14,25 @@ export const metadata = {
     "Web Developer Portfolio",
   ],
 
-  authors: [{ name: "Ronkedigital"}],
+  authors: [{ name: "Ronnydigitalhub"}],
 
-  creator: "Ronkedigital",
+  creator: "Ronnydigitalhub",
 
   viewport: "width=device-width, initial-scale=1",
 
   metadataBase: new URL("https://ronkedigital.vercel.app"),
 
   openGraph: {
-    title: "Ronkedigital Portfolio",
+    title: "Ronnydigitalhub Portfolio",
     description: "Explore my projects and skills in frontend development",
     url: "https://ronkedigital.vercel.app",
-    siteName: "Ronkedigital",
+    siteName: "Ronnydigital hub",
     images:[
       {
         url:"/preview.jpeg",
         width:1200,
         height: 630,
-        alt:"Ronkedigital portfolio",
+        alt:"Ronnydigitalhub portfolio",
       },
     ],
     locale: "en_US",
@@ -41,7 +41,7 @@ export const metadata = {
 
   twitter: {
     card: " summary_large _image",
-    tittle: "Ronkedigital portfolio",
+    tittle: "Ronnydigitalhub portfolio",
     description: "Frontend Developer building modern and responsive web apps.",
     images: [
       "/preview.jpeg"

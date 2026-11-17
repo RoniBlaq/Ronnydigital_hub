@@ -10,8 +10,8 @@ export default function Footer() {
                 <a href="https://github.com/roniblaq" className="hover:text-blue-500">GitHub</a>
                 <a href="#" className="hover:text-blue-500">LinkedIn</a>
                  <a href="https://www.twitter.com/RoniBlaq" className="hover:text-blue-500">X</a>
-                  <a href="https://www.instagram.com/ronkedigital" className="hover:text-blue-500">Instagram</a>
-                   <a href="https://www.tiktok.com/@ronkedigital" className="hover:text-blue-500">TikTok</a>
+                  <a href="https://www.instagram.com/ronnydigital_hub" className="hover:text-blue-500">Instagram</a>
+                   <a href="https://www.tiktok.com/@ronnydigital_hub" className="hover:text-blue-500">TikTok</a>
                    
             </div>  
             

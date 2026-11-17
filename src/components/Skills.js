@@ -1,5 +1,5 @@
 "use client"
-const skills = ["HTML", "CSS", "JavaScript", "React", "Next.js", "Tailwindcss", "PHP", "MySQL"];
+const skills = ["HTML", "CSS", "JavaScript", "React", "Next.js", "Tailwindcss", "PHP", "Laravel", "MySQL"];
 
 export default function Skills() {
     return (
