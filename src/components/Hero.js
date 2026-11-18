@@ -1,56 +1,97 @@
-"use client"
-import { motion } from "framer-motion"
-import Image from "next/image"
-export default function Hero () {
-    return (
-        <section className="relative overflow-hidden pt-24 pb-16 md:pb-0 min-h-screen flex  items-center bg-gradient-to-br from-blue-400 to-purple-500 text-center px-4 text-white">
-  
-        <motion.div 
-        animate={{ y: [0, -30, 0] }}
-        transition={{ duration: 6, repeat: Infinity }}
-        className="absolute top-20 left-10 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiple filter blur-3xl opacity-30"/>
+"use client";
 
-         <motion.div 
-         animate={{ y: [0, -30, 0] }}
-        transition={{ duration: 8, repeat: Infinity }}
-         className="absolute bottom-20 right-10 w-72 h-72 bg-yellow-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30"/>
+import { motion } from "framer-motion";
+import Image from "next/image";
 
-         <div className="relative z-10 max-w-7xl mx-auto w-full px-6 flex flex-col-reverse md:flex-row items-center justify-center gap-10 text-center md:text-left ">
+export default function Hero() {
+  return (
+    <section className="relative overflow-hidden min-h-screen flex items-center bg-gradient-to-br from-slate-950 via-blue-950 to-purple-950 text-white px-6 py-28">
 
-         <div className="flex-1w text-center md:text-left ">
-            <motion.h1
-            initial={{ opacity: 0, y: -40 }}
+      {/* Background decoration */}
+      <div className="absolute top-20 left-10 w-72 h-72 bg-purple-600 rounded-full blur-3xl opacity-20" />
+
+      <div className="absolute bottom-10 right-10 w-72 h-72 bg-blue-500 rounded-full blur-3xl opacity-20" />
+
+      <div className="relative z-10 max-w-7xl mx-auto w-full grid md:grid-cols-2 items-center gap-14">
+
+        {/* Text content */}
+        <div className="text-center md:text-left">
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-blue-300 font-semibold tracking-widest uppercase text-sm mb-5"
+          >
+            Welcome to Ronnydigital Hub
+          </motion.p>
+
+          <motion.h1
+            initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl md:text-5xl font-bold mb-4">
-        Hi, I`m Ronny
-        </motion.h1>
-        <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.3 }}
-        className="text-lg md:text-xl mb-6">Frontend Developer | PHP Enthusiast
-        </motion.p>
+            className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6"
+          >
+            We build digital experiences that move your brand forward.
+          </motion.h1>
 
-         <p className="mb-4">Let`s build something together! Reach out via email or socia media.
-            </p>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.3 }}
+            className="text-gray-300 text-lg leading-relaxed mb-5 max-w-xl mx-auto md:mx-0"
+          >
+            From modern websites and web applications to digital branding,
+            we help businesses and organisations establish a stronger
+            presence online.
+          </motion.p>
 
-        <motion.a
-        whileHover={{ scale: 1.1 }}
-        href="#Projects" className="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition">View My Work</motion.a>
-        </div>
-         
-        {/* */}
-            <div className="relative flex justify-center">
-                 <div className="absolute w-72 h-72 bg-gradient-to-r from-pink-600 to-yellow-0 rounded-full blur-3xl opacity-80"></div>
-                <Image src="/images/ronny.JPG"alt="my picture" width={300} height={300} className="rounded-full border-4 border-white shadow-lg"/>
-        </div>
+          <p className="text-gray-400 mb-8">
+            I&apos;m Ronny, the developer behind Ronnydigital Hub, specialising in building responsive web applications.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+           <motion.a
+              whileHover={{ scale: 1.05 }}
+              href="#projects"
+              className="px-7 py-3.5 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold transition text-center"
+            >
+              Explore Our Work
+            </motion.a>
+
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              href="#contact"
+              className="px-7 py-3.5 border border-white/40 hover:bg-white hover:text-slate-950 rounded-lg font-semibold transition text-center"
+            >
+              Start a Project
+            </motion.a>
+
+          </div>
         </div>
 
-        <div className="absolute bottom-2 md:bottom-4 left-4 text-xs md:text-sm text-white/70 italic z-10">
-            <h3>BELIEVE IN YOUR CODE BELIEVE IN YOURSELF</h3>
-            <p>you dont have to be great to start, but you have to start to be great. Zig Ziglar</p>
-        </div>
-        </section>
-    )
+        {/* Founder image */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
+          className="flex justify-center"
+        >
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 rounded-3xl blur-2xl opacity-40" />
+
+            <Image
+              src="/images/ronny.JPG"
+              alt="Ronny, founder of Ronnydigital Hub"
+              width={400}
+              height={450}
+              priority
+              className="relative w-72 h-80 sm:w-96 sm:h-[450px] object-cover rounded-3xl border border-white/20 shadow-2xl"
+            />
+          </div>
+        </motion.div>
+
+      </div>
+    </section>
+  );
 }

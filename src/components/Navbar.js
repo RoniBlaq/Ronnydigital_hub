@@ -1,46 +1,38 @@
+
 "use client";
+
 import Link from "next/link";
-import { useEffect, useState } from "react";
-// import ThemeToggle from "./ThemeToggle";
+
+const navLinks = [
+  { name: "About", href: "#about" },
+  { name: "Skills", href: "#skills" },
+  { name: "Projects", href: "#projects" },
+  { name: "Certificates", href: "#certificates" },
+  { name: "Contact", href: "#contact" },
+];
+
 export default function Navbar() {
-    const [dark, setDark] = useState(false);
+  return (
+    <nav className="fixed top-0 left-0 w-full z-50 bg-slate-950/90 backdrop-blur-lg border-b border-white/10">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
 
-          useEffect(() => {
-            const saved = localStorage.getItem("theme");
-            if (saved === "dark") setDark(true);
-          }, []);
+        <Link href="/" className="text-xl font-bold text-white">
+          Ronnydigital<span className="text-blue-400"> Hub.</span>
+        </Link>
 
-          useEffect(() => {
-            localStorage.setItem("theme", dark ? "dark" : "light");
-          }, [dark]);
+        <div className="flex flex-wrap justify-center items-center gap-x-5 gap-y-3 text-sm text-gray-300">
+          {navLinks.map((link) => (
+            <Link
+              key={link.name}
+              href={link.href}
+              className="hover:text-blue-400 transition-colors"
+            >
+              {link.name}
+            </Link>
+          ))}
+        </div>
 
-
-
-    return (
-        <nav className={`backdrop-blur fixed w-full z-50 shadow-sm transition 
-        ${
-          dark
-      ? "bg-gray-900/70 text-white"
-      : "bg-white/70 text-gray-800 "
-    }`}
-      >
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-3 justify-between items-center px-4 py-3">
-                <h1 className="font-bold text-xl text-blue-600">MyPortfolio</h1>
-                <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-                <Link href="#about" className="hover:text-blue-500">About
-                </Link>
-                <Link href="#skills" className="hover:text-blue-500">
-                Skills
-                </Link>
-                <Link href="#Projects" className="hover:text-blue-500">Projects
-                </Link>
-                <Link href="#Contact" className="hover:text-blue-500">Contact
-                </Link>
-                 <button onClick={() => setDark(!dark)}
-        className="px-3 py-1 rounded bg-gray-200 dark:bg-gray-700">{dark ? "☀️" : "🌙"}</button>
-                {/* <ThemeToggle/> */}
-            </div>
-            </div>
-        </nav>
-    )
+      </div>
+    </nav>
+  );
 }
