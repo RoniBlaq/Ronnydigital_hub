@@ -62,7 +62,7 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "Ronnydigital Hub | Websites, Web Apps & Branding",
+    title: "Ronnydigital Hub | Websites & Web Applications",
    description:
   "Discover modern website development and custom web application solutions by Ronnydigital Hub.",
     url: siteUrl,
