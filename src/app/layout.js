@@ -4,6 +4,36 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 
 const siteUrl = "https://ronnydigitalhub.vercel.app";
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${siteUrl}/#organization`,
+      name: "Ronnydigital Hub",
+      url: siteUrl,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteUrl}/logo.jpeg`,
+      },
+      description:
+        "Ronnydigital Hub provides website development and custom web application development services for businesses, organisations and individuals.",
+      sameAs: [
+        "https://www.instagram.com/ronnydigital_hub/",
+        "https://www.tiktok.com/@ronnydigital_hub",
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      url: siteUrl,
+      name: "Ronnydigital Hub",
+      publisher: {
+        "@id": `${siteUrl}/#organization`,
+      },
+    },
+  ],
+};
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
@@ -67,6 +97,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
+      <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
+      }}
+    />
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-09GGFL3E3H"
