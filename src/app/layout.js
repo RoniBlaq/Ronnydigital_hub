@@ -19,10 +19,12 @@ const structuredData = {
       description:
         "Ronnydigital Hub provides website development and custom web application development services for businesses, organisations and individuals.",
       sameAs: [
-        "https://www.instagram.com/ronnydigital_hub/",
-        "https://www.tiktok.com/@ronnydigital_hub",
-      ],
-    },
+      "https://www.instagram.com/ronnydigital_hub/",
+      "https://www.tiktok.com/@ronnydigital_hub",
+      "https://github.com/roniblaq",
+      "https://x.com/RoniBlaq",
+    ],
+        },
     {
       "@type": "WebSite",
       "@id": `${siteUrl}/#website`,
