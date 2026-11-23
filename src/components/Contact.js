@@ -36,23 +36,27 @@ export default function Contact() {
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-14 items-center">
 
         <div>
-          <p className="text-blue-400 uppercase tracking-widest text-sm font-semibold mb-3">
-            Let's Work Together
-          </p>
+      <p className="text-gray-400 text-lg leading-8 mb-6">
+        At Ronnydigital Hub, We provide website development and web
+        application development services for businesses, organisations
+        and individuals in Nigeria and beyond. Whether you need a
+        business website or a custom web application, I&apos;d love to
+        hear about your idea.
+      </p>
 
           <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
             Have a project in mind?
-            <span className="text-blue-400"> Let's talk.</span>
+            <span className="text-blue-400"> Let&apos;s talk.</span>
           </h2>
 
           <p className="text-gray-400 text-lg leading-8 mb-6">
             Whether you need a business website, a web application
-            or a stronger digital presence, I'd love to hear about
+            or a stronger digital presence, I&apos;d love to hear about
             your idea.
           </p>
 
           <p className="text-gray-300">
-            Tell me what you're looking to build, and let's explore
+            Tell me what you&apos;re looking to build, and let&apos;s explore
             how we can bring it to life.
           </p>
         </div>
@@ -144,7 +148,7 @@ export default function Contact() {
 
           {status === "error" && (
             <p role="alert" className="text-red-400 text-sm">
-              Sorry, your message couldn't be sent. Please try again.
+              Sorry, your message couldn&apos;t be sent. Please try again.
             </p>
           )}
 

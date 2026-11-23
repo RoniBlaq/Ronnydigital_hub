@@ -28,9 +28,10 @@ export default function Footer() {
         </a>
 
         <p className="text-gray-400 mt-4 max-w-lg mx-auto leading-7">
-          Building modern websites, web applications and digital
-          experiences that help brands move forward.
-        </p>
+        Ronnydigital Hub builds modern, responsive websites and custom
+        web applications for businesses, organisations and individuals
+        in Nigeria and beyond.
+</p>
 
         <div className="flex flex-wrap justify-center gap-6 mt-8">
           {socialLinks.map((social) => (

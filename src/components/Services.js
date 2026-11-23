@@ -34,14 +34,10 @@ export default function Services() {
           </p>
 
           <h2 className="text-3xl md:text-5xl font-bold mb-5">
-            Our Services
+            Website &Web Application Development Services
           </h2>
 
-          <p className="text-slate-400 leading-relaxed">
-            We create digital solutions that help businesses,
-            organisations and individuals establish, improve and
-            grow their online presence.
-          </p>
+          <p className="text-slate-400 leading-relaxed"> At Ronnydigital Hub, we provide professional website development and web application development services for businesses, organisations and individuals in Nigeria and beyond. We build modern digital solutions that help you establish, improve and grow your online presence. </p>
         </div>
 
         {/* Service Cards */}

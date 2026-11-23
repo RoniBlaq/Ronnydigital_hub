@@ -1,4 +1,3 @@
-
 "use client";
 
 const skillGroups = [
@@ -28,12 +27,15 @@ export default function Skills() {
           </p>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Tools & Technologies
+           Web Development Skills & Technologies
           </h2>
 
           <p className="text-gray-400 max-w-2xl mx-auto">
-            The technologies I use to design, develop and build
-            functional digital solutions.
+            <p className="text-gray-400 max-w-2xl mx-auto">
+            I use modern web development technologies to build responsive
+            websites, interactive web applications and reliable backend
+            solutions for businesses and organisations.
+          </p>
           </p>
         </div>
 

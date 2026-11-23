@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -8,7 +7,7 @@ const projects = [
   {
     name: "Oxygen Foundation",
     description:
-      "A web project designed to give an organisation a professional online presence.",
+      "A responsive website developed for an organisation to showcase its mission, share information and establish a professional online presence.",
     image: "/images/oxygen.jpeg",
     link: "https://oxygen-foundation.vercel.app",
     stack: "Web Development",
@@ -16,7 +15,7 @@ const projects = [
   {
     name: "PenPixel Studio",
     description:
-      "A creative studio website designed to showcase services and connect with potential clients.",
+      "A modern creative studio website developed to showcase services, highlight projects and help  potential clients connect with the business.",
     image: "/images/screeenshot.png",
     link: "https://penpixel-studio.vercel.app",
     stack: "Next.js • Tailwind CSS",
@@ -24,7 +23,7 @@ const projects = [
   {
     name: "Todo List",
     description:
-      "A task management application for organising and keeping track of everyday tasks.",
+      "A functional task management web application design to help users organise activities, manage tasks and track their daily progress.",
     image: "/images/todo.jpeg",
     link: "https://todo-list-five-chi-70.vercel.app",
     stack: "Web Application",
@@ -32,7 +31,7 @@ const projects = [
   {
     name: "Iconic Travels",
     description:
-      "A travel-focused website built with HTML, Bootstrap and JavaScript.",
+      "A responsive travel website designed to showcase travel services and provide visitors with an engaging browsing experience.",
     image: "/images/iconic.jpeg",
     link: "https://roniblaq.github.io/IconicTravels",
     stack: "HTML • Bootstrap • JavaScript",
@@ -40,7 +39,7 @@ const projects = [
   {
     name: "MindEase",
     description:
-      "A full-stack web application built with Next.js, Tailwind CSS, PHP and MySQL.",
+      "A full-stack web application developed to provide users with an interactive digital plartform, using Next.js, Tailwind CSS, PHP and MySQL.",
     image: "/images/sample.JPG",
     link: "https://mindease-smoky.vercel.app",
     stack: "Next.js • PHP • MySQL",

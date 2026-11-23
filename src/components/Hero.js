@@ -32,7 +32,7 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
             className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6"
           >
-            We build digital experiences that move your brand forward.
+            We build modern websites and web applications that move your brand forward.
           </motion.h1>
 
           <motion.p
