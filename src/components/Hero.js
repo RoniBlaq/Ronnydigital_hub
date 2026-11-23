@@ -21,7 +21,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-blue-300 font-semibold tracking-widest uppercase text-sm mb-5"
+            className="text-blue-300 font-semibold tracking-widest uppercase text-sm mb-5 mt-5"
           >
             Welcome to Ronnydigital Hub
           </motion.p>
@@ -41,7 +41,7 @@ export default function Hero() {
             transition={{ delay: 0.3 }}
             className="text-gray-300 text-lg leading-relaxed mb-5 max-w-xl mx-auto md:mx-0"
           >
-            From modern websites and web applications to digital branding,
+            From modern websites to web applications,
             we help businesses and organisations establish a stronger
             presence online.
           </motion.p>

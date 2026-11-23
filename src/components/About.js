@@ -27,8 +27,7 @@ export default function About() {
           </p>
 
           <p className="text-gray-300 text-lg leading-8 mb-6">
-            My work covers website development, web applications
-            and digital branding. I enjoy turning ideas into
+            My work covers website development and web applications. I enjoy turning ideas into
             functional digital solutions that help businesses
             and organisations connect with their audiences.
           </p>

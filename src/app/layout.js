@@ -11,7 +11,7 @@ export const metadata = {
   title: "Ronnydigital Hub | Website & Web App Development",
 
   description:
-    "Ronnydigital Hub helps businesses and organisations build modern websites, web applications and digital brand identities. Explore our services and projects.",
+  "Ronnydigital Hub builds modern websites and custom web applications for businesses, organisations and individuals in Nigeria and beyond.",
 
   authors: [{ name: "Ronnydigital Hub" }],
 
@@ -33,8 +33,8 @@ export const metadata = {
 
   openGraph: {
     title: "Ronnydigital Hub | Websites, Web Apps & Branding",
-    description:
-      "We build modern websites, web applications and digital brand identities for businesses and organisations.",
+   description:
+  "Discover modern website development and custom web application solutions by Ronnydigital Hub.",
     url: siteUrl,
     siteName: "Ronnydigital Hub",
     images: [
@@ -42,7 +42,7 @@ export const metadata = {
         url: "/preview.jpeg",
         width: 1200,
         height: 630,
-        alt: "Ronnydigital Hub - Website Development, Web Apps and Branding",
+        alt: "Ronnydigital Hub - Website Development, Web Apps",
       },
     ],
     locale: "en_NG",
@@ -51,9 +51,9 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Ronnydigital Hub | Websites, Web Apps & Branding",
-    description:
-      "Modern websites, web applications and digital branding for businesses and organisations.",
+  title: "Ronnydigital Hub | Websites & Web Applications",
+   description:
+  "Modern websites and custom web applications for businesses and organisations.",
     images: ["/preview.jpeg"],
   },
 };
