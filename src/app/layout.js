@@ -40,6 +40,10 @@ const structuredData = {
 export const metadata = {
   metadataBase: new URL(siteUrl),
 
+  verification: {
+    google:"W_xPWShKgQvYJSIJ0eMfXridRvodYkMX3qKvVsjOkAY",
+  },
+
   title: "Ronnydigital Hub | Website & Web App Development",
 
   description:
